@@ -324,7 +324,7 @@ didFinishDownloadingToURL:(NSURL *)location {
 }
 
 -(NSString *)keyWithURL:(NSURL *)url{
-    return [XHLaunchAdCache md5String:url.absoluteString];
+    return [url.absoluteString xh_md5String];
 }
 
 @end
